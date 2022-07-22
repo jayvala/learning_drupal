@@ -1,0 +1,8 @@
+services:
+  location_assignment.currenttime_manager:
+    class: Drupal\location_assignment\CurrentTimeManager
+    arguments: ["@config.factory", "@logger.channel.location_assignment"]
+
+  logger.channel.location_assignment:
+    parent: logger.channel_base
+    arguments: ["location_assignment"]

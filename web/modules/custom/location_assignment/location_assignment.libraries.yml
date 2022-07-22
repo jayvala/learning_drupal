@@ -1,0 +1,8 @@
+location_assignment_lib:
+  version: v1
+  js:
+    js/location_assignment.js: { scope: footer }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

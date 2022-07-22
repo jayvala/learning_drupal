@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * This is the module to show site location and current time.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function location_assignment_theme($existing, $type, $theme, $path) {
+  $config_factory = \Drupal::configFactory()->get('location.settings');
+  $country = $config_factory->get('country');
+  $time = \Drupal::service('location_assignment.currenttime_manager')->getCurrentTime();
+
+  return [
+    'location_assignment_display_block' => [
+      'variables' => [
+        'country' => $country,
+        'time' => $time,
+      ],
+    ],
+  ];
+}

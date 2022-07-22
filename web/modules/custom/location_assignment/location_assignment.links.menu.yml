@@ -1,0 +1,6 @@
+location_assignment.settings_form:
+  title: "Site Location Settings"
+  route_name: location_assignment.settings_form
+  description: "Site Location Settings Menu"
+  parent: system.admin_config_system
+  weight: 99

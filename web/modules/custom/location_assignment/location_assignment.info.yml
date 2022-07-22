@@ -1,0 +1,5 @@
+name: "Location Assignment"
+type: module
+description: "Displays site location and current time on each pages inside the block."
+package: Custom
+core_version_requirement: ^9
